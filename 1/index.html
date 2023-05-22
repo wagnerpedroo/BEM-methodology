@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>BEM metodology</title>
+    <style>
+        .c-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .c-list__item {
+            margin: 1rem .5rem;
+        }
+
+        .c-list__link {
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .c-list__link:hover {
+            text-decoration: underline;
+            
+        }
+
+        .c-list--disabled {
+            color: #ccc;
+            text-decoration: line-through;
+            /* pointer-events: none; */
+        }
+    </style>
+</head>
+<body>
+    <ul class="c-list">
+        <li class="c-list__item">
+            <a href="#" class="c-list__link">Item</a>
+        </li>
+        <li class="c-list__item">
+            <a href="#" class="c-list__link c-list--disabled" title="este link não está mais funcionando">Outro item</a>
+        </li>
+        <li class="c-list__item">
+            <a href="#" class="c-list__link">Mais um</a>
+        </li>
+    </ul>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
